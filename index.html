@@ -9,87 +9,45 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- <h1>Student Enrollment Form</h1> -->
-    <!-- name email website image-link gender Skills Enroll Student  -->
+    
 <div class="back">  
-    <center>  <h1> Student Enrollment Form</h1> </center>  
-    <!-- <section class="child"> -->
-    <form>  
+    <center>  <p id="hdn"> Student Enrollment Form</p> </center>  
+    <div id="form">  
 
                 <label> Name : </label>   
-                <input type="text" class="name" placeholder= "Name" size="15" required />   
+                <input type="text" id="inName" placeholder= "Name" size="15"  />   
             <label> Email : </label>    
-            <input type="text" class="email" placeholder="Email" size="15"required />  
+            <input type="text" id="inEmail" placeholder="Email" size="15" />  
                 <label for="Website">Website :</label>
-                <input type="text" class="website" placeholder="Website"required>
+                <input type="text" id="inWebsite" placeholder="Website"/>
             
                 <label for="file">Image link :</label>
-                <input type="file" class="image-link" accept="image/*" 
-                onchange="loadImage(event) " placeholder="Upload an image"required />
+                <input type="text" id="inImage" placeholder="Upload an image" />
         
                 <label for="text">   
                     Gender :  
                 </label><br>
-            <label >
-                Male
-                <input type="radio" value="Female" name="gender"> Female   
-                <input type="radio" value="Other" name="gender"> Other  
-                <input type="radio" value="Male" name="gender" checked >   
-            </label>
-         
-            <button type="submit" id="preview" class="registerbtn">Enroll Student</button>    
-    </form>
-            
-        <!-- <span onclick="newElement()" class="addBtn">Add</span> -->
-    <!-- </section> -->
-    
-    <div class="container">
-        <center><h2> Enrolled Student </h2> </center>
-        <!-- <div class="description">
-            Description
-        </div>
-        <div class="image"> -->
-            <!-- Image -->
-        <div class="card" id="result">
-            <header id="head">
-                <div class="camp">
-                    <span>Description</span>
-                    <span class="right">Image</span>
-                </div>
-            </header>
-            
-            <div class="content">
-                <div class="description">
-                    <ul>
-                        <li class="name">lorem ipsum</li>
-                        <li class="email">lrem@ipsum</li>        
-                        <li class="website">lorem.ipsum</li>
-                        <li class="gender">Male  </li>
-                    </ul>
-                </div>
-                <div class="image">
-                    <img src="./user1.jpg" id="imgDisplayed" alt="">
-                </div>
+                <div id="gender" >
+                    Male
+                <input type="radio" value="Male" name="gender" checked >
+                    Female   
+                <input type="radio" value="Female" name="gender"> 
+                Other  
+                <input type="radio" value="Other" name="gender"> 
+                
             </div>
+         
+            <button type="submit" id="preview" class="btn">Enroll Student</button>   
+            <button type="submit" id="clear" class="btn">clear</button>  
         </div>
+    
+    <div id="container">
+        <center><h2> Enrolled Students </h2> </center>
+    
+        
     </div>
 </div>
-        <!-- <table>
-            <tr>
-              <th>Description</th>
-              <th>Image</th>
-            </tr>
-            <tr>
-
-              <td>Alfreds Futterkiste</td>
-              <td><img src="user1.jpg" alt="not available"></td>
-            </tr>
-            <tr>
-              <td>Centro comercial Moctezuma</td>
-              <td><img src="" alt=""></td>
-            </tr>
-          </table> -->
-        
+         
     <script src="app.js"></script>
 </body>
 </html>
